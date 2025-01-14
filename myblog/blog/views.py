@@ -116,7 +116,7 @@ def post_comment(request, post_id) -> HttpResponse | None:
                        'form': form,
                        'comment': comment})
     
-def post_search(request):
+def post_search(request) -> HttpResponse:
     form = SearchForm()
     query = None
     results = []
